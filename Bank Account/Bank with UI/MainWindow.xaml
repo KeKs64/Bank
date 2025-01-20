@@ -1,0 +1,266 @@
+﻿<Window
+    x:Class="Bank_with_UI.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:Bank_with_UI"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="Bank"
+    Width="614"
+    Height="457"
+    mc:Ignorable="d">
+    <Window.DataContext>
+        <local:MainViewModel x:Name="viewModel" />
+    </Window.DataContext>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="307" />
+            <ColumnDefinition Width="307" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <!--  Anmelde/Registrierungs Block  -->
+        <TextBlock
+            Width="310"
+            Height="20"
+            Margin="20,12,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Text="Bitte geben Sie Ihr Benutzername und Passwort ein" />
+        <TextBox
+            x:Name="Benutzername"
+            Width="130"
+            Height="20"
+            Margin="20,57,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            IsEnabled="{Binding IsLoggedIn}" />
+        <PasswordBox
+            x:Name="Passwort"
+            Width="130"
+            Height="20"
+            Margin="20,92,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            IsEnabled="{Binding IsLoggedIn}" />
+        <Button
+            Width="80"
+            Height="30"
+            Margin="165,52,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="Anmelden"
+            Content="Anmelden" 
+            IsEnabled="{Binding IsLoggedIn}"/>
+        <Button
+            Width="80"
+            Height="30"
+            Margin="165,92,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="Registrieren"
+            Content="Registrieren" 
+            IsEnabled="{Binding IsLoggedIn}"/>
+
+        <!--  Konsole  -->
+        <TextBlock
+            x:Name="Console"
+            Width="250"
+            Height="50"
+            Margin="20,130,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Text="{Binding ConsoleUpdate}"
+            TextWrapping="Wrap" />
+
+        <!--  Kontostand anzeigen  -->
+        <Button
+            x:Name="btn_Konto"
+            Width="116"
+            Height="20"
+            Margin="27,185,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="KontostandAnzeigen"
+            Content="Kontostand anzeigen"
+            IsEnabled="{Binding IsntLoggedIn}" />
+
+        <!--  Währung  -->
+        <ComboBox
+            x:Name="WährungBox"
+            Width="116"
+            Height="20"
+            Margin="165,185,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            SelectedItem="{Binding Währung}">
+            <ComboBox.Items>
+                <ComboBoxItem Content="Euro" IsSelected="True" />
+                <ComboBoxItem Content="Dollar" />
+            </ComboBox.Items>
+        </ComboBox>
+
+        <!--  Einzahlen  -->
+        <TextBox
+            x:Name="EinzahlenBox"
+            Grid.Column="1"
+            Width="100"
+            Height="20"
+            Margin="50,32,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            IsEnabled="False"
+            PreviewTextInput="NumberValidationTextBox"
+            Text="{Binding EinzahlenFeld}" />
+        <Button
+            x:Name="btn_Einzahlen"
+            Grid.Column="1"
+            Width="70"
+            Height="20"
+            Margin="180,32,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="Einzahlen"
+            Content="Einzahlen"
+            IsEnabled="{Binding IsntLoggedIn}" />
+
+        <!--  Abheben  -->
+        <TextBox
+            x:Name="AbhebenBox"
+            Grid.Column="1"
+            Width="100"
+            Height="20"
+            Margin="50,77,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            IsEnabled="False"
+            PreviewTextInput="NumberValidationTextBox"
+            Text="{Binding AbhebenFeld}" />
+        <Button
+            x:Name="btn_Abheben"
+            Grid.Column="1"
+            Width="70"
+            Height="20"
+            Margin="180,77,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="Abheben"
+            Content="Abheben"
+            IsEnabled="{Binding IsntLoggedIn}" />
+
+
+        <!--  Konto Löschen  -->
+        <Button
+            x:Name="btn_Löschen"
+            Grid.Column="1"
+            Width="100"
+            Height="20"
+            Margin="165,155,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="Löschen"
+            Content="Konto Löschen"
+            IsEnabled="{Binding IsntLoggedIn}" />
+
+
+        <!--  Abmelden  -->
+        <Button
+            x:Name="btn_Abmelden"
+            Grid.Column="1"
+            Width="90"
+            Height="20"
+            Margin="50,155,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="Abmelden"
+            Content="Abmelden"
+            IsEnabled="{Binding IsntLoggedIn}" />
+
+
+        <!--  Zahlung History  -->
+        <Button
+            x:Name="btn_Zahlungs_History"
+            Grid.Column="1"
+            Width="100"
+            Height="20"
+            Margin="165,185,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="ZahlungsHistory"
+            Content="Zahlungs History"
+            IsEnabled="{Binding IsntLoggedIn}" />
+
+
+        <!--  Zinsen  -->
+        <Button
+            x:Name="btn_Zinsen"
+            Grid.Column="1"
+            Width="90"
+            Height="20"
+            Margin="50,185,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="Zinsen"
+            Content="Zinsen"
+            IsEnabled="{Binding IsntLoggedIn}" />
+
+
+        <DataGrid
+            x:Name="DG_transaction"
+            Grid.ColumnSpan="2"
+            Width="600"
+            Height="200"
+            Margin="0,220,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            AutoGenerateColumns="False"
+            ItemsSource="{Binding TransactionsOc}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Datum, StringFormat=dd.MM.yyyy HH:mm:ss}" Header="Zeitpunkt" />
+                <DataGridTextColumn Binding="{Binding Betrag, StringFormat={}{0:N2}}" Header="Betrag" />
+                <DataGridTemplateColumn Header="Typ">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Typ}">
+                                <TextBlock.Style>
+                                    <Style TargetType="TextBlock">
+                                        <Style.Triggers>
+                                            <!--  Einzahlung  -->
+                                            <DataTrigger Binding="{Binding Typ}" Value="Einzahlung">
+                                                <Setter Property="Background" Value="LightGreen" />
+                                                <Setter Property="Foreground" Value="Black" />
+                                            </DataTrigger>
+
+                                            <!--  Abhebung  -->
+                                            <DataTrigger Binding="{Binding Typ}" Value="Abhebung">
+                                                <Setter Property="Background" Value="Red" />
+                                                <Setter Property="Foreground" Value="White" />
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </TextBlock.Style>
+                            </TextBlock>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+
+
+        <TextBlock
+            x:Name="Console_Copy"
+            Grid.Column="1"
+            Width="250"
+            Height="50"
+            Margin="10,107,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Text="{Binding Kontostand}"
+            TextWrapping="Wrap" />
+
+
+    </Grid>
+</Window>

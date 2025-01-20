@@ -1,0 +1,17 @@
+C:\Users\louis.mu\source\repos\Bank Account\Bank Account\bin\Debug\net9.0\Bank Account.exe
+C:\Users\louis.mu\source\repos\Bank Account\Bank Account\bin\Debug\net9.0\Bank Account.deps.json
+C:\Users\louis.mu\source\repos\Bank Account\Bank Account\bin\Debug\net9.0\Bank Account.runtimeconfig.json
+C:\Users\louis.mu\source\repos\Bank Account\Bank Account\bin\Debug\net9.0\Bank Account.dll
+C:\Users\louis.mu\source\repos\Bank Account\Bank Account\bin\Debug\net9.0\Bank Account.pdb
+C:\Users\louis.mu\source\repos\Bank Account\Bank Account\obj\Debug\net9.0\Bank Account.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\louis.mu\source\repos\Bank Account\Bank Account\obj\Debug\net9.0\Bank Account.AssemblyInfoInputs.cache
+C:\Users\louis.mu\source\repos\Bank Account\Bank Account\obj\Debug\net9.0\Bank Account.AssemblyInfo.cs
+C:\Users\louis.mu\source\repos\Bank Account\Bank Account\obj\Debug\net9.0\Bank Account.csproj.CoreCompileInputs.cache
+C:\Users\louis.mu\source\repos\Bank Account\Bank Account\obj\Debug\net9.0\Bank Account.dll
+C:\Users\louis.mu\source\repos\Bank Account\Bank Account\obj\Debug\net9.0\refint\Bank Account.dll
+C:\Users\louis.mu\source\repos\Bank Account\Bank Account\obj\Debug\net9.0\Bank Account.pdb
+C:\Users\louis.mu\source\repos\Bank Account\Bank Account\obj\Debug\net9.0\Bank Account.genruntimeconfig.cache
+C:\Users\louis.mu\source\repos\Bank Account\Bank Account\obj\Debug\net9.0\ref\Bank Account.dll
+C:\Users\louis.mu\source\repos\Bank Account\Bank Account\bin\Debug\net9.0\Newtonsoft.Json.dll
+C:\Users\louis.mu\source\repos\Bank Account\Bank Account\obj\Debug\net9.0\Bank Account.csproj.AssemblyReference.cache
+C:\Users\louis.mu\source\repos\Bank Account\Bank Account\obj\Debug\net9.0\Bank Acc.0A74DC3D.Up2Date

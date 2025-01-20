@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\louis.mu\\source\\repos\\Bank Library\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B5900B47-7967-4A39-A73A-C2247DEBBFE6}|Bank Library\\Bank Library.csproj|c:\\users\\louis.mu\\source\\repos\\bank library\\bank library\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5900B47-7967-4A39-A73A-C2247DEBBFE6}|Bank Library\\Bank Library.csproj|solutionrelative:bank library\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5900B47-7967-4A39-A73A-C2247DEBBFE6}|Bank Library\\Bank Library.csproj|c:\\users\\louis.mu\\source\\repos\\bank library\\bank library\\bank.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5900B47-7967-4A39-A73A-C2247DEBBFE6}|Bank Library\\Bank Library.csproj|solutionrelative:bank library\\bank.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5900B47-7967-4A39-A73A-C2247DEBBFE6}|Bank Library\\Bank Library.csproj|c:\\users\\louis.mu\\source\\repos\\bank library\\bank library\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5900B47-7967-4A39-A73A-C2247DEBBFE6}|Bank Library\\Bank Library.csproj|solutionrelative:bank library\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5900B47-7967-4A39-A73A-C2247DEBBFE6}|Bank Library\\Bank Library.csproj|c:\\users\\louis.mu\\source\\repos\\bank library\\bank library\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5900B47-7967-4A39-A73A-C2247DEBBFE6}|Bank Library\\Bank Library.csproj|solutionrelative:bank library\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Transaction.cs",
+              "DocumentMoniker": "C:\\Users\\louis.mu\\source\\repos\\Bank Library\\Bank Library\\Transaction.cs",
+              "RelativeDocumentMoniker": "Bank Library\\Transaction.cs",
+              "ToolTip": "C:\\Users\\louis.mu\\source\\repos\\Bank Library\\Bank Library\\Transaction.cs",
+              "RelativeToolTip": "Bank Library\\Transaction.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-10T10:32:49.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\louis.mu\\source\\repos\\Bank Library\\Bank Library\\Program.cs",
+              "RelativeDocumentMoniker": "Bank Library\\Program.cs",
+              "ToolTip": "C:\\Users\\louis.mu\\source\\repos\\Bank Library\\Bank Library\\Program.cs",
+              "RelativeToolTip": "Bank Library\\Program.cs",
+              "ViewState": "AgIAALwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-10T10:32:43.561Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Bank.cs",
+              "DocumentMoniker": "C:\\Users\\louis.mu\\source\\repos\\Bank Library\\Bank Library\\Bank.cs",
+              "RelativeDocumentMoniker": "Bank Library\\Bank.cs",
+              "ToolTip": "C:\\Users\\louis.mu\\source\\repos\\Bank Library\\Bank Library\\Bank.cs",
+              "RelativeToolTip": "Bank Library\\Bank.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-10T10:32:25.047Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Account.cs",
+              "DocumentMoniker": "C:\\Users\\louis.mu\\source\\repos\\Bank Library\\Bank Library\\Account.cs",
+              "RelativeDocumentMoniker": "Bank Library\\Account.cs",
+              "ToolTip": "C:\\Users\\louis.mu\\source\\repos\\Bank Library\\Bank Library\\Account.cs",
+              "RelativeToolTip": "Bank Library\\Account.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAowCUAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-10T10:32:14.907Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

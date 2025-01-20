@@ -1,0 +1,253 @@
+﻿<Window
+    x:Class="Bank_with_UI.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:Bank_with_UI"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="Zinsen"
+    Width="400"
+    Height="521"
+    mc:Ignorable="d">
+    <Window.DataContext>
+        <local:MainViewModel x:Name="viewModel" />
+    </Window.DataContext>
+    <Grid>
+
+        <TextBlock
+            Width="243"
+            Height="20"
+            Margin="72,17,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Text="Welche umrechen Methode wollen sie nutzen" />
+        <TextBlock
+            Width="78"
+            Height="20"
+            Margin="54,52,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Text="Feste Laufzeit" />
+        <TextBlock
+            Width="99"
+            Height="20"
+            Margin="249,52,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Text="Festes End Kapital" />
+
+        <!--  Laufzeit  -->
+        <TextBlock
+            x:Name="LaufzeitBlockJahre"
+            Width="33"
+            Height="20"
+            Margin="17,147,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Text="Jahre:"
+            Visibility="Collapsed" />
+        <TextBlock
+            x:Name="LaufzeitBlockStart"
+            Width="67"
+            Height="20"
+            Margin="17,172,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Text="Start Kapital:"
+            Visibility="Collapsed" />
+        <TextBlock
+            x:Name="LaufzeitBlockZins"
+            Width="52"
+            Height="20"
+            Margin="17,197,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Text="Zinssatz:"
+            Visibility="Collapsed" />
+        <TextBlock
+            x:Name="LaufzeitBlock"
+            Width="165"
+            Height="20"
+            Margin="11,117,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Text="Berechnung mit fester Laufzeit"
+            Visibility="Collapsed" />
+        <TextBox
+            x:Name="LaufzeitJahreBox"
+            Width="90"
+            Height="20"
+            Margin="86,147,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Text="{Binding LaufzeitJahre}"
+            Visibility="Collapsed" />
+        <TextBox
+            x:Name="LaufzeitStartBox"
+            Width="100"
+            Height="20"
+            Margin="86,172,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Text="{Binding StartKapital, StringFormat={}{0:F2}}"
+            Visibility="Collapsed" />
+        <TextBox
+            x:Name="LaufzeitZinsBox"
+            Width="70"
+            Height="20"
+            Margin="86,197,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            RenderTransformOrigin="0.48,0.519"
+            Text="{Binding Zinsen}"
+            Visibility="Collapsed" />
+        <Button
+            x:Name="btn_Ergebnis_Jahre"
+            Width="60"
+            Height="20"
+            Margin="250,172,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="Ergebnis_Jahre"
+            Content="Ergebnis"
+            Visibility="Collapsed" />
+
+        <!--  End-Kaptial  -->
+        <TextBlock
+            x:Name="EndKapBlockZiel"
+            Width="61"
+            Height="20"
+            Margin="16,147,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Text="Ziel Kapital:"
+            Visibility="Collapsed" />
+        <TextBlock
+            x:Name="EndKapBlockStart"
+            Width="67"
+            Height="20"
+            Margin="16,172,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Text="Start Kapital:"
+            Visibility="Collapsed" />
+        <TextBlock
+            x:Name="EndKapBlockZins"
+            Width="52"
+            Height="20"
+            Margin="16,197,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Text="Zinssatz:"
+            Visibility="Collapsed" />
+        <TextBlock
+            x:Name="EndKapBlock"
+            Width="190"
+            Height="20"
+            Margin="10,116,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Text="Berechnung mit festem End-Kapital"
+            Visibility="Collapsed" />
+        <TextBox
+            x:Name="EndKapZielBox"
+            Width="90"
+            Height="20"
+            Margin="85,147,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Text="{Binding EndKapital, StringFormat={}{0:F2}}"
+            Visibility="Collapsed" />
+        <TextBox
+            x:Name="EndKapStartBox"
+            Width="100"
+            Height="20"
+            Margin="85,172,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Text="{Binding StartKapital, StringFormat={}{0:F2}}"
+            Visibility="Collapsed" />
+        <TextBox
+            x:Name="EndKapZinsBox"
+            Width="70"
+            Height="20"
+            Margin="85,197,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Text="{Binding Zinsen}"
+            Visibility="Collapsed" />
+        <Button
+            x:Name="btn_Ergebnis_EndKap"
+            Width="60"
+            Height="20"
+            Margin="250,172,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="Ergebnis_EndKap"
+            Content="Ergebnis"
+            Visibility="Collapsed" />
+
+
+        <DataGrid
+            Width="390"
+            Height="200"
+            Margin="0,283,0,0"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            AutoGenerateColumns="False"
+            ItemsSource="{Binding ZinsenOc}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Jahr}" Header="Jahr" />
+                <DataGridTextColumn Binding="{Binding VerzinstesKapital, StringFormat={}{0:F2}}" Header="Verzinstes Kapital" />
+                <DataGridTextColumn Binding="{Binding KapitalzuwachsEuro, StringFormat={}{0:F2}}" Header="Kapitalzuwachs Euro" />
+                <DataGridTextColumn Binding="{Binding KapitalzuwachsProzent, StringFormat={}{0:F2}}" Header="Kapitalzuwachs Prozent" />
+            </DataGrid.Columns>
+        </DataGrid>
+
+
+        <ToggleButton
+            Width="60"
+            Height="30"
+            Margin="157,47,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Checked="FesteLaufzeit"
+            IsChecked="{Binding IsLightTheme, Mode=OneWay}"
+            Unchecked="FestesEndKapital">
+            <ToggleButton.Template>
+                <ControlTemplate>
+                    <Border
+                        x:Name="ToggleRand"
+                        Width="58"
+                        Height="30"
+                        Background="Black"
+                        CornerRadius="15">
+                        <Border
+                            x:Name="ToggleKreis"
+                            Width="22"
+                            Height="22"
+                            Margin="4,0,4,0"
+                            HorizontalAlignment="Left"
+                            Background="White"
+                            CornerRadius="15">
+                            <Border.Effect>
+                                <DropShadowEffect Opacity=".2" />
+                            </Border.Effect>
+                        </Border>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="ToggleButton.IsChecked" Value="False">
+                            <Setter TargetName="ToggleKreis" Property="HorizontalAlignment" Value="Right" />
+                            <Setter TargetName="ToggleKreis" Property="Background" Value="White" />
+                        </Trigger>
+
+                        <Trigger Property="ToggleButton.IsChecked" Value="True">
+                            <Setter TargetName="ToggleRand" Property="Background" Value="Black" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </ToggleButton.Template>
+        </ToggleButton>
+
+    </Grid>
+</Window>
