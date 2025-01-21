@@ -7,19 +7,7 @@ namespace Bank_with_UI;
 public class MainViewModel : ObservableObject
 {
 
-    private string consoleUpdate = "";
-    private string kontostand = "";
-    private string währung = "Euro";
-    private double einzahlen;
-    private double abheben;
-    private double laufzeitJahre;
-    private double endKapital;
-    private double startKapital;
-    private double zinsen;
-    private ObservableCollection<Transaction> transactionsOc;
-    private ObservableCollection<Zinsen> zinsenOc;
-
-
+    private string consoleUpdate = "Um unsere Funktionen freizuschalten bitte Anmelden";
     public string ConsoleUpdate
     {
         get { return consoleUpdate; }
@@ -29,15 +17,19 @@ public class MainViewModel : ObservableObject
             OnPropertyChanged(nameof(ConsoleUpdate));
         }
     }
+
+    private string kontostand2 = "";
     public string Kontostand
     {
-        get { return kontostand; }
+        get { return kontostand2; }
         set
         {
-            kontostand = value;
+            kontostand2 = value;
             OnPropertyChanged(nameof(kontostand));
         }
     }
+
+    private string währung = "Euro";
     public string Währung
     {
         get { return währung; }
@@ -47,6 +39,8 @@ public class MainViewModel : ObservableObject
             OnPropertyChanged(nameof(Währung));
         }
     }
+
+    private double einzahlen;
     public double EinzahlenFeld
     {
         get { return einzahlen; }
@@ -56,6 +50,7 @@ public class MainViewModel : ObservableObject
             OnPropertyChanged(nameof(EinzahlenFeld));
         }
     }
+    private double abheben;
     public double AbhebenFeld
     {
         get { return abheben; }
@@ -65,6 +60,8 @@ public class MainViewModel : ObservableObject
             OnPropertyChanged(nameof(AbhebenFeld));
         }
     }
+
+    private double laufzeitJahre;
     public double LaufzeitJahre
     {
         get { return laufzeitJahre; }
@@ -74,6 +71,8 @@ public class MainViewModel : ObservableObject
             OnPropertyChanged(nameof(LaufzeitJahre));
         }
     }
+
+    private double endKapital;
     public double EndKapital
     {
         get { return endKapital; }
@@ -83,6 +82,8 @@ public class MainViewModel : ObservableObject
             OnPropertyChanged(nameof(EndKapital));
         }
     }
+
+    private double startKapital;
     public double StartKapital
     {
         get { return startKapital; }
@@ -92,6 +93,8 @@ public class MainViewModel : ObservableObject
             OnPropertyChanged(nameof(StartKapital));
         }
     }
+
+    private double zinsen;
     public double Zinsen
     {
         get { return zinsen; }
@@ -101,6 +104,8 @@ public class MainViewModel : ObservableObject
             OnPropertyChanged(nameof(Zinsen));
         }
     }
+
+    private ObservableCollection<Transaction> transactionsOc;
     public ObservableCollection<Transaction> TransactionsOc
     {
         get { return transactionsOc; }
@@ -110,6 +115,8 @@ public class MainViewModel : ObservableObject
             OnPropertyChanged(nameof(TransactionsOc));
         }
     }
+
+    private ObservableCollection<Zinsen> zinsenOc;
     public ObservableCollection<Zinsen> ZinsenOc
     {
         get { return zinsenOc; }
@@ -142,8 +149,8 @@ public class MainViewModel : ObservableObject
             OnPropertyChanged(nameof(IsntLoggedIn));
         }
     }
-    private bool visibleJahre = false;
-    public bool VisibleJahre
+    private Visibility visibleJahre;
+    public Visibility VisibleJahre
     {
         get { return visibleJahre; }
         set
@@ -152,8 +159,8 @@ public class MainViewModel : ObservableObject
             OnPropertyChanged(nameof(VisibleJahre));
         }
     }
-    private bool visibleEnd = false;
-    public bool VisibleEnd
+    private Visibility visibleEnd;
+    public Visibility VisibleEnd
     {
         get { return visibleEnd; }
         set
@@ -163,4 +170,91 @@ public class MainViewModel : ObservableObject
         }
     }
 
+    internal void VMErgebnisJahre()
+    {
+        double laufzeitJahre = LaufzeitJahre;
+        double startKapital = StartKapital;
+        double zinsen = Zinsen / 100.0;
+
+
+        double aktuellesKapital = startKapital;
+        var zinsenListe = new ObservableCollection<Zinsen>();
+
+        for (int jahr = 1; jahr <= laufzeitJahre; jahr++)
+        {
+
+            double kapitalzuwachsEuro = aktuellesKapital * zinsen;
+            aktuellesKapital += kapitalzuwachsEuro;
+
+
+            double kapitalzuwachsProzent = kapitalzuwachsEuro / startKapital * 100;
+
+
+            zinsenListe.Add(new Zinsen(
+                jahr,
+                aktuellesKapital,
+                kapitalzuwachsEuro,
+                kapitalzuwachsProzent
+            ));
+        }
+
+
+        ZinsenOc = zinsenListe;
+    }
+    internal void VMErgebnisEndKap()
+    {
+
+        double kapital = StartKapital;
+        double zinsen = Zinsen / 100;
+        double zielKapital = EndKapital;
+        int jahr = 0;
+
+        var zinsenListe = new ObservableCollection<Zinsen>();
+
+        while (kapital < zielKapital)
+        {
+            jahr++;
+            double zinsBetrag = kapital * zinsen;
+            kapital += zinsBetrag;
+
+
+            zinsenListe.Add(new Zinsen(
+                jahr,
+                kapital,
+                zinsBetrag,
+                zinsBetrag / StartKapital * 100
+            ));
+        }
+        ZinsenOc = zinsenListe;
+    }
+
+    public double kontostand = 0;
+    public string benutzername = default;
+    public string passwort = default;
+    public Bank bank = new Bank();
+
+    internal void LoadData()
+    {
+        bank.LoadData();
+        bank.SaveData();
+    }
+
+    internal void VMAnmelden(string username, string password)
+    {
+        benutzername = username;
+        passwort = password;
+        if (bank.ExistAccount(benutzername, passwort))
+        {
+            ConsoleUpdate = $"Willkommen {benutzername}";
+            IsntLoggedIn = true;
+            IsLoggedIn = false;
+
+            bank.SaveData();
+        }
+        else
+        {
+            MessageBox.Show("Account nicht gefunden");
+            bank.SaveData();
+        }
+    }
 }

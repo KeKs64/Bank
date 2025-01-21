@@ -1,5 +1,4 @@
-﻿using System.IO;
-using System.Text.RegularExpressions;
+﻿using System.Text.RegularExpressions;
 using System.Windows;
 using System.Windows.Input;
 using Bank_Library;
@@ -17,31 +16,15 @@ namespace Bank_with_UI
         public Bank bank = new Bank();
         public MainWindow()
         {
-            bank.LoadData();
-
-            bank.DevAccounts();
 
             InitializeComponent();
-            viewModel.ConsoleUpdate = "Um unsere Funktionen freizuschalten bitte Anmelden";
+            viewModel.LoadData();
+            
         }
 
         private void Anmelden(object sender, RoutedEventArgs e)
         {
-            benutzername = Benutzername.Text;
-            passwort = Passwort.Password;
-            if (bank.ExistAccount(benutzername, passwort))
-            {
-                viewModel.ConsoleUpdate = $"Willkommen {benutzername}";
-                viewModel.IsntLoggedIn = true;
-                viewModel.IsLoggedIn = false;
-
-                bank.SaveData();
-            }
-            else
-            {
-                MessageBox.Show("Account nicht gefunden");
-                bank.SaveData();
-            }
+            viewModel.VMAnmelden(Benutzername.Text, Passwort.Password);
         }
 
         private void Registrieren(object sender, RoutedEventArgs e)

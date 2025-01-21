@@ -25,3 +25,31 @@ C:\Users\louis.mu\source\repos\Bank Account\Bank with UI\obj\Debug\net9.0-window
 C:\Users\louis.mu\source\repos\Bank Account\Bank with UI\obj\Debug\net9.0-windows\ref\Bank with UI.dll
 C:\Users\louis.mu\source\repos\Bank Account\Bank with UI\obj\Debug\net9.0-windows\Window1.g.cs
 C:\Users\louis.mu\source\repos\Bank Account\Bank with UI\obj\Debug\net9.0-windows\Window1.baml
+C:\Users\louis.mu\Documents\Git\Bank\Bank Account\Bank with UI\bin\Debug\net9.0-windows\Bank with UI.exe
+C:\Users\louis.mu\Documents\Git\Bank\Bank Account\Bank with UI\bin\Debug\net9.0-windows\Bank with UI.deps.json
+C:\Users\louis.mu\Documents\Git\Bank\Bank Account\Bank with UI\bin\Debug\net9.0-windows\Bank with UI.runtimeconfig.json
+C:\Users\louis.mu\Documents\Git\Bank\Bank Account\Bank with UI\bin\Debug\net9.0-windows\Bank with UI.dll
+C:\Users\louis.mu\Documents\Git\Bank\Bank Account\Bank with UI\bin\Debug\net9.0-windows\Bank with UI.pdb
+C:\Users\louis.mu\Documents\Git\Bank\Bank Account\Bank with UI\bin\Debug\net9.0-windows\Bank Library.dll
+C:\Users\louis.mu\Documents\Git\Bank\Bank Account\Bank with UI\bin\Debug\net9.0-windows\Bank Library.pdb
+C:\Users\louis.mu\Documents\Git\Bank\Bank Account\Bank with UI\obj\Debug\net9.0-windows\Bank with UI.csproj.AssemblyReference.cache
+C:\Users\louis.mu\Documents\Git\Bank\Bank Account\Bank with UI\obj\Debug\net9.0-windows\MainWindow.g.cs
+C:\Users\louis.mu\Documents\Git\Bank\Bank Account\Bank with UI\obj\Debug\net9.0-windows\Window1.g.cs
+C:\Users\louis.mu\Documents\Git\Bank\Bank Account\Bank with UI\obj\Debug\net9.0-windows\App.g.cs
+C:\Users\louis.mu\Documents\Git\Bank\Bank Account\Bank with UI\obj\Debug\net9.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\louis.mu\Documents\Git\Bank\Bank Account\Bank with UI\obj\Debug\net9.0-windows\Bank with UI_MarkupCompile.cache
+C:\Users\louis.mu\Documents\Git\Bank\Bank Account\Bank with UI\obj\Debug\net9.0-windows\Bank with UI_MarkupCompile.lref
+C:\Users\louis.mu\Documents\Git\Bank\Bank Account\Bank with UI\obj\Debug\net9.0-windows\MainWindow.baml
+C:\Users\louis.mu\Documents\Git\Bank\Bank Account\Bank with UI\obj\Debug\net9.0-windows\Window1.baml
+C:\Users\louis.mu\Documents\Git\Bank\Bank Account\Bank with UI\obj\Debug\net9.0-windows\Bank with UI.g.resources
+C:\Users\louis.mu\Documents\Git\Bank\Bank Account\Bank with UI\obj\Debug\net9.0-windows\Bank with UI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\louis.mu\Documents\Git\Bank\Bank Account\Bank with UI\obj\Debug\net9.0-windows\Bank with UI.AssemblyInfoInputs.cache
+C:\Users\louis.mu\Documents\Git\Bank\Bank Account\Bank with UI\obj\Debug\net9.0-windows\Bank with UI.AssemblyInfo.cs
+C:\Users\louis.mu\Documents\Git\Bank\Bank Account\Bank with UI\obj\Debug\net9.0-windows\Bank with UI.csproj.CoreCompileInputs.cache
+C:\Users\louis.mu\Documents\Git\Bank\Bank Account\Bank with UI\obj\Debug\net9.0-windows\Bank with UI.sourcelink.json
+C:\Users\louis.mu\Documents\Git\Bank\Bank Account\Bank with UI\obj\Debug\net9.0-windows\Bank wit.A8E4AB0E.Up2Date
+C:\Users\louis.mu\Documents\Git\Bank\Bank Account\Bank with UI\obj\Debug\net9.0-windows\Bank with UI.dll
+C:\Users\louis.mu\Documents\Git\Bank\Bank Account\Bank with UI\obj\Debug\net9.0-windows\refint\Bank with UI.dll
+C:\Users\louis.mu\Documents\Git\Bank\Bank Account\Bank with UI\obj\Debug\net9.0-windows\Bank with UI.pdb
+C:\Users\louis.mu\Documents\Git\Bank\Bank Account\Bank with UI\obj\Debug\net9.0-windows\Bank with UI.genruntimeconfig.cache
+C:\Users\louis.mu\Documents\Git\Bank\Bank Account\Bank with UI\obj\Debug\net9.0-windows\ref\Bank with UI.dll

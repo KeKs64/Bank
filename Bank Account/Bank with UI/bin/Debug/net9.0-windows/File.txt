@@ -4,13 +4,5 @@ admin
 
 dev
 dev
-448555
-
-kkkkkk
-ppppppp
-445555
-
-123
-123
-100
+5000
 
