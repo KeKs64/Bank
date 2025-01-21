@@ -18,38 +18,38 @@ namespace Bank_with_UI
 
         private void Anmelden(object sender, RoutedEventArgs e)
         {
-            viewModel.VMAnmelden(Benutzername.Text, Passwort.Password);
+            viewModel.VMAnmelden(Benutzername.Text, Passwort.Text);
         }
 
         private void Registrieren(object sender, RoutedEventArgs e)
         {
-            viewModel.VMRegistrieren(Benutzername.Text, Passwort.Password);
+            viewModel.VMRegistrieren(Benutzername.Text, Passwort.Text);
         }
         private void KontostandAnzeigen(object sender, RoutedEventArgs e)
         {
-            viewModel.VMKontostandAnzeigen(Benutzername.Text, Passwort.Password);
+            viewModel.VMKontostandAnzeigen(Benutzername.Text, Passwort.Text);
         }
 
         private void Einzahlen(object sender, RoutedEventArgs e)
         {
-            viewModel.VMEinzahlen(Benutzername.Text, Passwort.Password);
+            viewModel.VMEinzahlen(Benutzername.Text, Passwort.Text);
         }
 
         private void Abheben(object sender, RoutedEventArgs e)
         {
-            viewModel.VMAbheben(Benutzername.Text, Passwort.Password);
+            viewModel.VMAbheben(Benutzername.Text, Passwort.Text);
         }
         private void Löschen(object sender, RoutedEventArgs e)
         {
-            viewModel.VMLöschen(Benutzername.Text, Passwort.Password);
+            viewModel.VMLöschen(Benutzername.Text, Passwort.Text);
         }
         private void Abmelden(object sender, RoutedEventArgs e)
         {
-            viewModel.VMAbmelden(Benutzername.Text, Passwort.Password);
+            viewModel.VMAbmelden(Benutzername.Text, Passwort.Text);
         }
         private void ZahlungsHistory(object sender, RoutedEventArgs e)
         {
-            viewModel.VMZahlungsHistory(Benutzername.Text, Passwort.Password);
+            viewModel.VMZahlungsHistory(Benutzername.Text, Passwort.Text);   
         }
         private void NumberValidationTextBox(object sender, TextCompositionEventArgs e)
         {

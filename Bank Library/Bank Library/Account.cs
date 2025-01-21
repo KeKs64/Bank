@@ -12,7 +12,7 @@ namespace Bank_Library
         public double TagesLimitInsgesamt = 0;
         private DateTime LetzteAbhebung;
 
-        private ObservableCollection<Transaction> ZahlungsHistorie = new ObservableCollection<Transaction>();
+        public ObservableCollection<Transaction> ZahlungsHistorie = new ObservableCollection<Transaction>();
 
         public Account(double kontostand, string benutzername, string passwort)
         {
