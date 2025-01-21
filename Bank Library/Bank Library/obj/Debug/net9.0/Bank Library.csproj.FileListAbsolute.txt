@@ -21,3 +21,4 @@ C:\Users\louis.mu\Documents\Git\Bank\Bank Library\Bank Library\obj\Debug\net9.0\
 C:\Users\louis.mu\Documents\Git\Bank\Bank Library\Bank Library\obj\Debug\net9.0\refint\Bank Library.dll
 C:\Users\louis.mu\Documents\Git\Bank\Bank Library\Bank Library\obj\Debug\net9.0\Bank Library.pdb
 C:\Users\louis.mu\Documents\Git\Bank\Bank Library\Bank Library\obj\Debug\net9.0\ref\Bank Library.dll
+C:\Users\louis.mu\Documents\Git\Bank\Bank Library\Bank Library\obj\Debug\net9.0\Bank Library.csproj.AssemblyReference.cache

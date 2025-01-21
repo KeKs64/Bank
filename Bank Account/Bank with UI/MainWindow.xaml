@@ -37,6 +37,7 @@
             Margin="20,57,0,0"
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
+            Text="{Binding Benutzername}"
             IsEnabled="{Binding IsLoggedIn}" />
         <PasswordBox
             x:Name="Passwort"

@@ -6,7 +6,7 @@ namespace Bank_Library
     {
         public double Kontostand { get; private set; }
         public string Benutzername { get; private set; }
-        private string Passwort;
+        public string Passwort { get; private set; }
 
         private double TagesLimit = 2000;
         public double TagesLimitInsgesamt = 0;
@@ -52,10 +52,6 @@ namespace Bank_Library
             TagesLimitInsgesamt += betrag;
             ZahlungsHistorie.Add(new Transaction(DateTime.Now, betrag, "Abhebung"));
             return true;
-        }
-        public string Passwortpub()
-        {
-            return Passwort;
         }
         public ObservableCollection<Transaction> GetZahlungsHistorie()
         {

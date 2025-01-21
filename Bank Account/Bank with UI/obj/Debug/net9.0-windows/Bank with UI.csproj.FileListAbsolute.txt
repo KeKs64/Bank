@@ -53,3 +53,4 @@ C:\Users\louis.mu\Documents\Git\Bank\Bank Account\Bank with UI\obj\Debug\net9.0-
 C:\Users\louis.mu\Documents\Git\Bank\Bank Account\Bank with UI\obj\Debug\net9.0-windows\Bank with UI.pdb
 C:\Users\louis.mu\Documents\Git\Bank\Bank Account\Bank with UI\obj\Debug\net9.0-windows\Bank with UI.genruntimeconfig.cache
 C:\Users\louis.mu\Documents\Git\Bank\Bank Account\Bank with UI\obj\Debug\net9.0-windows\ref\Bank with UI.dll
+C:\Users\louis.mu\Documents\Git\Bank\Bank Account\Bank with UI\bin\Debug\net9.0-windows\Newtonsoft.Json.dll

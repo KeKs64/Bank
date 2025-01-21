@@ -1,8 +1,0 @@
-admin
-admin
-5000
-
-dev
-dev
-5000
-

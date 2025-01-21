@@ -1,5 +1,6 @@
 ﻿using Bank_Library;
 using System.Collections.ObjectModel;
+using System.Data.Common;
 using System.Windows;
 
 namespace Bank_with_UI;
@@ -28,6 +29,28 @@ public class MainViewModel : ObservableObject
             OnPropertyChanged(nameof(kontostand));
         }
     }
+
+    private string benutzername;
+    public string Benutzername
+    {
+        get { return benutzername; }
+        set
+        {
+            benutzername = value;
+            OnPropertyChanged(nameof(Benutzername));
+        }
+    }
+    private string password;
+    public string Password
+    {
+        get { return password; }
+        set
+        {
+            password = value;
+            OnPropertyChanged(nameof(Password));
+        }
+    }
+
 
     private string währung = "Euro";
     public string Währung
@@ -229,23 +252,21 @@ public class MainViewModel : ObservableObject
     }
 
     public double kontostand = 0;
-    public string benutzername = default;
-    public string passwort = default;
     public Bank bank = new Bank();
 
     internal void LoadData()
     {
+        //bank.DevAccounts();
         bank.LoadData();
         bank.SaveData();
     }
 
     internal void VMAnmelden(string username, string password)
     {
-        benutzername = username;
-        passwort = password;
-        if (bank.ExistAccount(benutzername, passwort))
+        
+        if (bank.ExistAccount(username, password))
         {
-            ConsoleUpdate = $"Willkommen {benutzername}";
+            ConsoleUpdate = $"Willkommen {username}";
             IsntLoggedIn = true;
             IsLoggedIn = false;
 
@@ -256,5 +277,99 @@ public class MainViewModel : ObservableObject
             MessageBox.Show("Account nicht gefunden");
             bank.SaveData();
         }
+    }
+    internal void VMRegistrieren(string username, string password)
+    {
+        if (username != "" && password != "")
+        {
+            if (bank.ExistAccount(username, password))
+            {
+                MessageBox.Show("Account existiert bereits");
+                bank.SaveData();
+            }
+            else
+            {
+                bank.AccountHinzu(0, username, password);
+                ConsoleUpdate = $"Sie sind nun Registriert \nWillkommen {username}";
+                IsntLoggedIn = true;
+                IsLoggedIn = false;
+
+                bank.SaveData();
+            }
+        }
+        else
+        {
+            MessageBox.Show("Bitte geben sie ein Passwort und Benutzernamen ein", "", MessageBoxButton.OK, MessageBoxImage.Error);
+        }
+    }
+    internal void VMKontostandAnzeigen(string username, string password)
+    {
+        
+        var kontostandcheck = bank.Kontostand(username, password);
+        Kontostand = $"Ihr Kontostand: {kontostandcheck.Value} Euro";
+        kontostand = kontostandcheck.Value;
+        bank.SaveData();
+    }
+    internal void VMEinzahlen(string username, string password)
+    {
+        double einzahlenMenge = EinzahlenFeld;
+        if (bank.Einzahlen(einzahlenMenge, username, password))
+            ConsoleUpdate = "Einzahlen erfolgreich.";
+        else
+            MessageBox.Show("Einzahlen fehlgeschlagen.");
+        bank.SaveData();
+    }
+    internal void VMAbheben(string username, string password)
+    {
+        double abhebenMenge = AbhebenFeld;
+        if (bank.Abheben(abhebenMenge, username, password))
+            ConsoleUpdate = "Abhebung erfolgreich.";
+        else
+            MessageBox.Show("Abhebung fehlgeschlagen. Sie haben das Tageslimit erreicht oder keine valide Zahl eingegeben.");
+        bank.SaveData();
+    }
+    internal void VMLöschen(string username, string password)
+    {
+        var Result = MessageBox.Show("Bist du dir sicher das du dein Konto Löschen möchtest?", "Konto Löschen", MessageBoxButton.YesNo, MessageBoxImage.Error);
+        if (Result == MessageBoxResult.Yes)
+        {
+            var kontostandcheck = bank.Kontostand(username, password);
+            if (kontostandcheck.Value == 0)
+            {
+                MessageBox.Show("Dein Konto würde gelöscht");
+                ConsoleUpdate = "Dein Konto würde gelöscht";
+                bank.AccountEntf(username, password);
+                Benutzername = "";
+                Password = "";
+                IsntLoggedIn = false;
+                IsLoggedIn = true;
+
+                bank.SaveData();
+            }
+            else
+            {
+                MessageBox.Show("Sie haben noch Geld/Schulden auf Ihrem Konto | Vorgang abgebrochen", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                ConsoleUpdate = "Die Aktion wurde abgeborchen";
+            }
+
+        }
+        else if (Result == MessageBoxResult.No)
+        {
+            MessageBox.Show("Die Aktion wurde abgebrochen");
+            ConsoleUpdate = "Die Aktion wurde abgeborchen";
+        }
+    }
+    internal void VMAbmelden(string username, string password)
+    {
+        Benutzername = "";
+        Password = "";
+        IsntLoggedIn = false;
+        IsLoggedIn = true;
+
+        bank.SaveData();
+    }
+    internal void VMZahlungsHistory(string username, string password)
+    {
+        TransactionsOc = bank.AbrufZahlungsHistorie(username, password);
     }
 }
