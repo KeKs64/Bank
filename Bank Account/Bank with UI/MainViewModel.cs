@@ -1,5 +1,6 @@
 ﻿using Bank_Library;
 using System.Collections.ObjectModel;
+using System.Windows;
 
 namespace Bank_with_UI;
 
@@ -121,16 +122,6 @@ public class MainViewModel : ObservableObject
 
 
 
-    private bool isntLoggedIn = false;
-    public bool IsntLoggedIn
-    {
-        get { return isntLoggedIn; }
-        set
-        {
-            isntLoggedIn = value;
-            OnPropertyChanged(nameof(IsntLoggedIn));
-        }
-    }
     private bool isLoggedIn = true;
     public bool IsLoggedIn
     {
@@ -141,4 +132,35 @@ public class MainViewModel : ObservableObject
             OnPropertyChanged(nameof(IsLoggedIn));
         }
     }
+    private bool isntLoggedIn = false;
+    public bool IsntLoggedIn
+    {
+        get { return isntLoggedIn; }
+        set
+        {
+            isntLoggedIn = value;
+            OnPropertyChanged(nameof(IsntLoggedIn));
+        }
+    }
+    private bool visibleJahre = false;
+    public bool VisibleJahre
+    {
+        get { return visibleJahre; }
+        set
+        {
+            visibleJahre = value;
+            OnPropertyChanged(nameof(VisibleJahre));
+        }
+    }
+    private bool visibleEnd = false;
+    public bool VisibleEnd
+    {
+        get { return visibleEnd; }
+        set
+        {
+            visibleEnd = value;
+            OnPropertyChanged(nameof(VisibleEnd));
+        }
+    }
+
 }

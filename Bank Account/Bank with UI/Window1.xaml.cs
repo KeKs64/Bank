@@ -71,9 +71,9 @@ namespace Bank_with_UI
 
         private void Ergebnis_Jahre(object sender, RoutedEventArgs e)
         {
-            double laufzeitJahre = viewModel.LaufzeitJahre;
-            double startKapital = viewModel.StartKapital;
-            double zinsen = viewModel.Zinsen / 100.0;
+            double laufzeitJahre = viewModel1.LaufzeitJahre;
+            double startKapital = viewModel1.StartKapital;
+            double zinsen = viewModel1.Zinsen / 100.0;
 
 
             double aktuellesKapital = startKapital;
@@ -98,13 +98,13 @@ namespace Bank_with_UI
             }
 
 
-            viewModel.ZinsenOc = zinsenListe;
+            viewModel1.ZinsenOc = zinsenListe;
         }
         private void Ergebnis_EndKap(object sender, RoutedEventArgs e)
         {
-            double kapital = viewModel.StartKapital;
-            double zinsen = viewModel.Zinsen / 100;
-            double zielKapital = viewModel.EndKapital;
+            double kapital = viewModel1.StartKapital;
+            double zinsen = viewModel1.Zinsen / 100;
+            double zielKapital = viewModel1.EndKapital;
             int jahr = 0;
 
             var zinsenListe = new ObservableCollection<Zinsen>();
@@ -120,10 +120,10 @@ namespace Bank_with_UI
                     jahr,
                     kapital,
                     zinsBetrag,
-                    zinsBetrag / viewModel.StartKapital * 100
+                    zinsBetrag / viewModel1.StartKapital * 100
                 ));
             }
-            viewModel.ZinsenOc = zinsenListe;
+            viewModel1.ZinsenOc = zinsenListe;
         }
     }
 }
