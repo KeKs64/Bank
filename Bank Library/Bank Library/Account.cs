@@ -1,18 +1,38 @@
 ﻿using System.Collections.ObjectModel;
+using System.ComponentModel;
 
 namespace Bank_Library
 {
-    public class Account
+    public class Account : INotifyPropertyChanged
     {
-        public double Kontostand { get; private set; }
+        private double kontostand;
+        public double Kontostand
+        {
+            get { return kontostand; }
+            set
+            {
+                kontostand = value;
+                OnPropertyChanged(nameof(Kontostand));
+            }
+                }
         public string Benutzername { get; private set; }
         public string Passwort { get; private set; }
 
         private double TagesLimit = 2000;
         public double TagesLimitInsgesamt = 0;
         private DateTime LetzteAbhebung;
+        public ObservableCollection<Transaction> ZahlungsHistorie = new();
 
-        public ObservableCollection<Transaction> ZahlungsHistorie = new ObservableCollection<Transaction>();
+        //private ObservableCollection<Transaction> zahlungsHistorie;
+        //public ObservableCollection<Transaction> ZahlungsHistorie 
+        //{ 
+        //    get { return zahlungsHistorie; }
+        //    set 
+        //    {
+        //        zahlungsHistorie = value;
+        //        OnPropertyChanged(nameof(ZahlungsHistorie));
+        //    }
+        //}
 
         public Account(double kontostand, string benutzername, string passwort)
         {
@@ -56,6 +76,12 @@ namespace Bank_Library
         public ObservableCollection<Transaction> GetZahlungsHistorie()
         {
             return ZahlungsHistorie;
+        }
+
+        public event PropertyChangedEventHandler? PropertyChanged;
+        protected void OnPropertyChanged(string propertyName)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 }

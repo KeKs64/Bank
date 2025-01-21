@@ -19,6 +19,7 @@ namespace Bank_with_UI
         private void Anmelden(object sender, RoutedEventArgs e)
         {
             viewModel.VMAnmelden(Benutzername.Text, Passwort.Text);
+            viewModel.VMZahlungsHistory(Benutzername.Text, Passwort.Text);
         }
 
         private void Registrieren(object sender, RoutedEventArgs e)
@@ -47,10 +48,10 @@ namespace Bank_with_UI
         {
             viewModel.VMAbmelden(Benutzername.Text, Passwort.Text);
         }
-        private void ZahlungsHistory(object sender, RoutedEventArgs e)
-        {
-            viewModel.VMZahlungsHistory(Benutzername.Text, Passwort.Text);   
-        }
+        //private void ZahlungsHistory(object sender, RoutedEventArgs e)
+        //{
+        //    viewModel.VMZahlungsHistory(Benutzername.Text, Passwort.Text);   
+        //}
         private void NumberValidationTextBox(object sender, TextCompositionEventArgs e)
         {
             Regex regex = new Regex("[^0-9.-]+");

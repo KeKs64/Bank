@@ -7,6 +7,7 @@ namespace Bank_with_UI;
 
 public class MainViewModel : ObservableObject
 {
+    public Bank bank = new Bank();
 
     private string consoleUpdate = "Um unsere Funktionen freizuschalten bitte Anmelden";
     public string ConsoleUpdate
@@ -19,14 +20,14 @@ public class MainViewModel : ObservableObject
         }
     }
 
-    private string kontostand2 = "";
-    public string Kontostand
+    private Account kontostand;
+    public Account Kontostand
     {
-        get { return kontostand2; }
+        get { return kontostand; }
         set
         {
-            kontostand2 = value;
-            OnPropertyChanged(nameof(kontostand));
+            kontostand = value;
+            OnPropertyChanged(nameof(Kontostand));
         }
     }
 
@@ -251,8 +252,7 @@ public class MainViewModel : ObservableObject
         ZinsenOc = zinsenListe;
     }
 
-    public double kontostand = 0;
-    public Bank bank = new Bank();
+
 
     internal void LoadData()
     {
@@ -306,8 +306,7 @@ public class MainViewModel : ObservableObject
     {
         
         var kontostandcheck = bank.Kontostand(username, password);
-        Kontostand = $"Ihr Kontostand: {kontostandcheck.Value} Euro";
-        kontostand = kontostandcheck.Value;
+        kontostand.Kontostand = kontostandcheck.Value;
         bank.SaveData();
     }
     internal void VMEinzahlen(string username, string password)

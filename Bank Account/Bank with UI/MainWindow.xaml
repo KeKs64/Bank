@@ -37,8 +37,8 @@
             Margin="20,57,0,0"
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
-            Text="{Binding Benutzername}"
-            IsEnabled="{Binding IsLoggedIn}" />
+            IsEnabled="{Binding IsLoggedIn}"
+            Text="{Binding Benutzername}" />
         <TextBox
             x:Name="Passwort"
             Width="130"
@@ -46,8 +46,8 @@
             Margin="20,92,0,0"
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
-            Text="{Binding Password}"
-            IsEnabled="{Binding IsLoggedIn}" />
+            IsEnabled="{Binding IsLoggedIn}"
+            Text="{Binding Password}" />
         <Button
             Width="80"
             Height="30"
@@ -55,8 +55,8 @@
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
             Click="Anmelden"
-            Content="Anmelden" 
-            IsEnabled="{Binding IsLoggedIn}"/>
+            Content="Anmelden"
+            IsEnabled="{Binding IsLoggedIn}" />
         <Button
             Width="80"
             Height="30"
@@ -64,8 +64,8 @@
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
             Click="Registrieren"
-            Content="Registrieren" 
-            IsEnabled="{Binding IsLoggedIn}"/>
+            Content="Registrieren"
+            IsEnabled="{Binding IsLoggedIn}" />
 
         <!--  Konsole  -->
         <TextBlock
@@ -79,16 +79,6 @@
             TextWrapping="Wrap" />
 
         <!--  Kontostand anzeigen  -->
-        <Button
-            x:Name="btn_Konto"
-            Width="116"
-            Height="20"
-            Margin="27,185,0,0"
-            HorizontalAlignment="Left"
-            VerticalAlignment="Top"
-            Click="KontostandAnzeigen"
-            Content="Kontostand anzeigen"
-            IsEnabled="{Binding IsntLoggedIn}" />
 
         <!--  Währung  -->
         <ComboBox
@@ -183,7 +173,7 @@
 
 
         <!--  Zahlung History  -->
-        <Button
+        <!--<Button
             x:Name="btn_Zahlungs_History"
             Grid.Column="1"
             Width="100"
@@ -192,8 +182,8 @@
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
             Content="Zahlungs History"
-            IsEnabled="{Binding IsntLoggedIn}" />
-            <!--Click="ZahlungsHistory"-->
+            Click="ZahlungsHistory"
+            IsEnabled="{Binding IsntLoggedIn}" />-->
 
 
         <!--  Zinsen  -->
@@ -211,7 +201,6 @@
 
 
         <DataGrid
-            x:Name="DG_transaction"
             Grid.ColumnSpan="2"
             Width="600"
             Height="200"
@@ -253,11 +242,10 @@
 
 
         <TextBlock
-            x:Name="Console_Copy"
-            Grid.Column="1"
-            Width="250"
-            Height="50"
-            Margin="10,107,0,0"
+            x:Name="Kontostand"
+            Width="63"
+            Height="19"
+            Margin="87,186,0,0"
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
             Text="{Binding Kontostand}"
