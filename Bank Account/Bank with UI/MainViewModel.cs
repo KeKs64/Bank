@@ -55,8 +55,8 @@ public class MainViewModel : ObservableObject
     }
 
 
-    private string währung = "Euro";
-    public string Währung
+    private Währung währung;
+    public Währung Währung
     {
         get { return währung; }
         set
@@ -65,6 +65,29 @@ public class MainViewModel : ObservableObject
             OnPropertyChanged(nameof(Währung));
         }
     }
+    private double euro;
+    public double Euro
+    {
+        get { return euro; }
+        set
+        {
+            euro = value;
+            OnPropertyChanged(nameof(Euro));
+        }
+    }
+    private double dollar;
+
+    public double Dollar
+    {
+        get { return dollar; }
+        set
+        {
+            dollar = value;
+            OnPropertyChanged(nameof(Dollar));
+        }
+    }
+
+
 
     private double einzahlen;
     public double EinzahlenFeld
@@ -265,7 +288,7 @@ public class MainViewModel : ObservableObject
 
     internal void VMAnmelden(string username, string password)
     {
-        
+
         if (bank.ExistAccount(username, password))
         {
             ConsoleUpdate = $"Willkommen {username}";
