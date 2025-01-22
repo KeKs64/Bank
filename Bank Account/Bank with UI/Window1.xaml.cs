@@ -1,6 +1,8 @@
 ﻿using Bank_Library;
 using System.Collections.ObjectModel;
+using System.Text.RegularExpressions;
 using System.Windows;
+using System.Windows.Input;
 
 namespace Bank_with_UI
 {
@@ -40,6 +42,11 @@ namespace Bank_with_UI
         private void Ergebnis_EndKap(object sender, RoutedEventArgs e)
         {
             viewModel1.VMErgebnisEndKap();
+        }
+        private void NumberValidationTextBox(object sender, TextCompositionEventArgs e)
+        {
+            Regex regex = new Regex("[^0-9.]+");
+            e.Handled = regex.IsMatch(e.Text);
         }
     }
 }

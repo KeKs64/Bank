@@ -66,10 +66,11 @@ namespace Bank_Library
 
         public void SaveData()
         {
-            
-            string json = JsonSerializer.Serialize(accounts);
-            File.WriteAllText(filePath,json);
 
+            string json = JsonSerializer.Serialize(accounts);
+            File.WriteAllText(filePath, json);
+
+            
 
             /*using (StreamWriter writer = new StreamWriter(filePath))
                 //foreach (var account in accounts)
@@ -90,6 +91,7 @@ namespace Bank_Library
         {
             if (!File.Exists(filePath))
             {
+                AccountHinzu(0, "", "");
                 AccountHinzu(5000, "admin", "admin");
                 AccountHinzu(5000, "dev", "dev");
                 File.Create(filePath).Close();
@@ -99,12 +101,10 @@ namespace Bank_Library
 
             if (File.Exists(filePath))
             {
-                    string json = File.ReadAllText(filePath);
-                    accounts = JsonSerializer.Deserialize<List<Account>>(json);
+                string json = File.ReadAllText(filePath);
+                accounts = JsonSerializer.Deserialize<List<Account>>(json);
             }
             return (0, "", "");
-
-
 
             /*try
             //{

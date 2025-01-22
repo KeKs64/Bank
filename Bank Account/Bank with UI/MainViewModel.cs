@@ -1,7 +1,9 @@
 ﻿using Bank_Library;
 using System.Collections.ObjectModel;
-using System.Data.Common;
+using System.IO;
+using System.Text.Json;
 using System.Windows;
+using System.Windows.Controls;
 
 namespace Bank_with_UI;
 
@@ -20,14 +22,14 @@ public class MainViewModel : ObservableObject
         }
     }
 
-    private Account kontostand;
-    public Account Kontostand
+    private Account loginUser;
+    public Account LogInUser
     {
-        get { return kontostand; }
+        get { return loginUser; }
         set
         {
-            kontostand = value;
-            OnPropertyChanged(nameof(Kontostand));
+            loginUser = value;
+            OnPropertyChanged(nameof(LogInUser));
         }
     }
 
@@ -271,12 +273,14 @@ public class MainViewModel : ObservableObject
             IsLoggedIn = false;
 
             bank.SaveData();
+            LogInUser = bank.FindAccount(username, password);
         }
         else
         {
             MessageBox.Show("Account nicht gefunden");
             bank.SaveData();
         }
+
     }
     internal void VMRegistrieren(string username, string password)
     {
@@ -295,6 +299,7 @@ public class MainViewModel : ObservableObject
                 IsLoggedIn = false;
 
                 bank.SaveData();
+                LogInUser = bank.FindAccount(username, password);
             }
         }
         else
@@ -302,13 +307,14 @@ public class MainViewModel : ObservableObject
             MessageBox.Show("Bitte geben sie ein Passwort und Benutzernamen ein", "", MessageBoxButton.OK, MessageBoxImage.Error);
         }
     }
-    internal void VMKontostandAnzeigen(string username, string password)
-    {
+    /*internal void VMKontostandAnzeigen(string username, string password)
+    //{
         
-        var kontostandcheck = bank.Kontostand(username, password);
-        kontostand.Kontostand = kontostandcheck.Value;
-        bank.SaveData();
-    }
+    //    var kontostandcheck = bank.Kontostand(username, password);
+    //    loginUser.Kontostand = kontostandcheck.Value;
+    //    bank.SaveData();
+    //}
+    */
     internal void VMEinzahlen(string username, string password)
     {
         double einzahlenMenge = EinzahlenFeld;
@@ -366,9 +372,14 @@ public class MainViewModel : ObservableObject
         IsLoggedIn = true;
 
         bank.SaveData();
+        LogInUser = null;
+        username = "";
+        password = "";
+        VMZahlungsHistory(username, password);
     }
     internal void VMZahlungsHistory(string username, string password)
     {
         TransactionsOc = bank.AbrufZahlungsHistorie(username, password);
     }
+
 }

@@ -1,5 +1,6 @@
 ﻿using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Text.Json.Serialization;
 
 namespace Bank_Library
 {
@@ -14,25 +15,15 @@ namespace Bank_Library
                 kontostand = value;
                 OnPropertyChanged(nameof(Kontostand));
             }
-                }
+        }
         public string Benutzername { get; private set; }
         public string Passwort { get; private set; }
 
         private double TagesLimit = 2000;
         public double TagesLimitInsgesamt = 0;
         private DateTime LetzteAbhebung;
+        [JsonInclude]
         public ObservableCollection<Transaction> ZahlungsHistorie = new();
-
-        //private ObservableCollection<Transaction> zahlungsHistorie;
-        //public ObservableCollection<Transaction> ZahlungsHistorie 
-        //{ 
-        //    get { return zahlungsHistorie; }
-        //    set 
-        //    {
-        //        zahlungsHistorie = value;
-        //        OnPropertyChanged(nameof(ZahlungsHistorie));
-        //    }
-        //}
 
         public Account(double kontostand, string benutzername, string passwort)
         {

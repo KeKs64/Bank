@@ -1,5 +1,6 @@
 ﻿using System.Text.RegularExpressions;
 using System.Windows;
+using System.Windows.Controls;
 using System.Windows.Input;
 using Bank_Library;
 
@@ -26,10 +27,11 @@ namespace Bank_with_UI
         {
             viewModel.VMRegistrieren(Benutzername.Text, Passwort.Text);
         }
-        private void KontostandAnzeigen(object sender, RoutedEventArgs e)
-        {
-            viewModel.VMKontostandAnzeigen(Benutzername.Text, Passwort.Text);
-        }
+        /*private void KontostandAnzeigen(object sender, RoutedEventArgs e)
+        //{
+        //    viewModel.VMKontostandAnzeigen(Benutzername.Text, Passwort.Text);
+        //}
+        */
 
         private void Einzahlen(object sender, RoutedEventArgs e)
         {
@@ -48,10 +50,11 @@ namespace Bank_with_UI
         {
             viewModel.VMAbmelden(Benutzername.Text, Passwort.Text);
         }
-        //private void ZahlungsHistory(object sender, RoutedEventArgs e)
+        /*private void ZahlungsHistory(object sender, RoutedEventArgs e)
         //{
         //    viewModel.VMZahlungsHistory(Benutzername.Text, Passwort.Text);   
         //}
+        */
         private void NumberValidationTextBox(object sender, TextCompositionEventArgs e)
         {
             Regex regex = new Regex("[^0-9.-]+");

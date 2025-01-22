@@ -240,17 +240,14 @@
             </DataGrid.Columns>
         </DataGrid>
 
-
-        <TextBlock
+        <TextBox
             x:Name="Kontostand"
-            Width="63"
+            Width="130"
             Height="19"
-            Margin="87,186,0,0"
+            Margin="20,186,0,0"
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
-            Text="{Binding Kontostand}"
-            TextWrapping="Wrap" />
-
-
+            IsReadOnly="True"
+            Text="{Binding LogInUser.Kontostand}" />
     </Grid>
 </Window>
