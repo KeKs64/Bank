@@ -74,8 +74,7 @@
               "RelativeToolTip": "..\\Bank Library\\Bank Library\\W\u00E4hrung.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-22T11:37:45.145Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-22T11:37:45.145Z"
             },
             {
               "$type": "Document",
@@ -99,8 +98,7 @@
               "RelativeToolTip": "..\\Bank Library\\Bank Library\\Account.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T14:08:27.611Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-21T14:08:27.611Z"
             },
             {
               "$type": "Document",
@@ -112,8 +110,7 @@
               "RelativeToolTip": "..\\Bank Library\\Bank Library\\Transaction.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T13:16:45.005Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-21T13:16:45.005Z"
             },
             {
               "$type": "Document",
@@ -123,7 +120,7 @@
               "RelativeDocumentMoniker": "Bank with UI\\Window1.xaml.cs",
               "ToolTip": "C:\\Users\\louis.mu\\Documents\\Git\\Bank\\Bank Account\\Bank with UI\\Window1.xaml.cs",
               "RelativeToolTip": "Bank with UI\\Window1.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-14T09:25:32.053Z",
               "EditorCaption": ""
@@ -138,8 +135,7 @@
               "RelativeToolTip": "Bank with UI\\MainWindow.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T10:51:53.641Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-10T10:51:53.641Z"
             }
           ]
         }
@@ -172,8 +168,7 @@
               "RelativeToolTip": "Bank with UI\\bin\\Debug\\net9.0-windows\\File.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAACeAwAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-21T13:13:53.663Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-21T13:13:53.663Z"
             },
             {
               "$type": "Document",
@@ -196,8 +191,7 @@
               "ToolTip": "C:\\Users\\louis.mu\\Documents\\Git\\Bank\\Bank Account\\Bank with UI\\MainWindow.xaml",
               "RelativeToolTip": "Bank with UI\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-21T13:03:09.526Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-21T13:03:09.526Z"
             }
           ]
         }
@@ -230,8 +224,7 @@
               "RelativeToolTip": "..\\Bank Library\\Bank Library\\Bank.cs",
               "ViewState": "AgIAAD0AAAAAAAAAAAAhwFkAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-22T08:29:31.972Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-22T08:29:31.972Z"
             },
             {
               "$type": "Document",
@@ -241,7 +234,7 @@
               "RelativeDocumentMoniker": "Bank with UI\\MainViewModel.cs",
               "ToolTip": "C:\\Users\\louis.mu\\Documents\\Git\\Bank\\Bank Account\\Bank with UI\\MainViewModel.cs",
               "RelativeToolTip": "Bank with UI\\MainViewModel.cs",
-              "ViewState": "AgIAAFEBAAAAAAAAAAAYwHABAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHABAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-21T13:02:42.057Z",
               "EditorCaption": ""
