@@ -1,1 +1,88 @@
-[{"Kontostand":5000,"Benutzername":"admin","Passwort":"admin","ZahlungsHistorie":[]},{"Kontostand":5000,"Benutzername":"dev","Passwort":"dev","ZahlungsHistorie":[{"Datum":"2025-01-22T10:44:07.9151193+01:00","Betrag":50,"Typ":"Einzahlung"},{"Datum":"2025-01-22T10:44:15.0415921+01:00","Betrag":25,"Typ":"Abhebung"},{"Datum":"2025-01-22T10:44:15.1697499+01:00","Betrag":25,"Typ":"Abhebung"},{"Datum":"2025-01-22T10:44:15.9842072+01:00","Betrag":50,"Typ":"Einzahlung"},{"Datum":"2025-01-22T10:44:16.6495543+01:00","Betrag":25,"Typ":"Abhebung"},{"Datum":"2025-01-22T10:44:16.7767909+01:00","Betrag":25,"Typ":"Abhebung"}]},{"Kontostand":0,"Benutzername":"123","Passwort":"123","ZahlungsHistorie":[{"Datum":"2025-01-22T11:00:19.3665629+01:00","Betrag":100,"Typ":"Einzahlung"},{"Datum":"2025-01-22T11:00:24.6766195+01:00","Betrag":200,"Typ":"Abhebung"},{"Datum":"2025-01-22T11:00:24.9987937+01:00","Betrag":100,"Typ":"Einzahlung"}]}]
+[
+  {
+    "Kontostand": 5000,
+    "Benutzername": "admin",
+    "Passwort": "admin",
+    "ZahlungsHistorie": [
+    ]
+  },
+  {
+    "Kontostand": 5000,
+    "Benutzername": "dev",
+    "Passwort": "dev",
+    "ZahlungsHistorie": [
+      {
+        "Datum": "2025-01-22T10:44:07.9151193+01:00",
+        "Betrag": 50,
+        "Typ": "Einzahlung"
+      },
+      {
+        "Datum": "2025-01-22T10:44:15.0415921+01:00",
+        "Betrag": 25,
+        "Typ": "Abhebung"
+      },
+      {
+        "Datum": "2025-01-22T10:44:15.1697499+01:00",
+        "Betrag": 25,
+        "Typ": "Abhebung"
+      },
+      {
+        "Datum": "2025-01-22T10:44:15.9842072+01:00",
+        "Betrag": 50,
+        "Typ": "Einzahlung"
+      },
+      {
+        "Datum": "2025-01-22T10:44:16.6495543+01:00",
+        "Betrag": 25,
+        "Typ": "Abhebung"
+      },
+      {
+        "Datum": "2025-01-22T10:44:16.7767909+01:00",
+        "Betrag": 25,
+        "Typ": "Abhebung"
+      }
+    ]
+  },
+  {
+    "Kontostand": 0,
+    "Benutzername": "123",
+    "Passwort": "123",
+    "ZahlungsHistorie": [
+      {
+        "Datum": "2025-01-22T11:00:19.3665629+01:00",
+        "Betrag": 100,
+        "Typ": "Einzahlung"
+      },
+      {
+        "Datum": "2025-01-22T11:00:24.6766195+01:00",
+        "Betrag": 200,
+        "Typ": "Abhebung"
+      },
+      {
+        "Datum": "2025-01-22T11:00:24.9987937+01:00",
+        "Betrag": 100,
+        "Typ": "Einzahlung"
+      },
+      {
+        "Datum": "2025-01-23T11:16:52.012643+01:00",
+        "Betrag": 5,
+        "Typ": "Einzahlung"
+      },
+      {
+        "Datum": "2025-01-23T11:17:06.5670135+01:00",
+        "Betrag": 5,
+        "Typ": "Einzahlung"
+      },
+      {
+        "Datum": "2025-01-23T11:18:46.2944093+01:00",
+        "Betrag": 100,
+        "Typ": "Einzahlung"
+      },
+      {
+        "Datum": "2025-01-23T11:19:48.6760012+01:00",
+        "Betrag": 100,
+        "Typ": "Abhebung"
+      }
+    ]
+  }
+]

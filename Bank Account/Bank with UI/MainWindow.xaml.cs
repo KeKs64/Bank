@@ -15,12 +15,14 @@ namespace Bank_with_UI
         {
             InitializeComponent();
             viewModel.LoadData();
+            //WährungBox.ItemsSource = typeof(Währung).GetProperties();
         }
 
         private void Anmelden(object sender, RoutedEventArgs e)
         {
             viewModel.VMAnmelden(Benutzername.Text, Passwort.Text);
             viewModel.VMZahlungsHistory(Benutzername.Text, Passwort.Text);
+
         }
 
         private void Registrieren(object sender, RoutedEventArgs e)
@@ -65,6 +67,17 @@ namespace Bank_with_UI
         {
             Window1 win1 = new Window1();
             win1.Show();
+        }
+
+        private void TestButton_Click(object sender, RoutedEventArgs e)
+        {
+            //MessageBox.Show(WährungBox.SelectedItem.ToString());
+            //string test = WährungBox.SelectedValue.ToString();
+
+            var item = (ComboBoxItem)WährungBox.SelectedValue;
+            var content = (string)item.Content;
+
+            viewModel.VMTest_Button(content, Benutzername.Text, Passwort.Text);
         }
     }
 }

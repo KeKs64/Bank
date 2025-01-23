@@ -88,13 +88,21 @@
             Margin="165,185,0,0"
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
+            ItemsSource="{Binding Währung}"
             SelectedItem="{Binding Währung}">
-            <ComboBox.Items>
-                <ComboBoxItem Content="Euro" IsSelected="True" />
-                <ComboBoxItem Content="Dollar" />
-            </ComboBox.Items>
+            <ComboBoxItem Content="Euro" IsSelected="True" />
+            <ComboBoxItem Content="Dollar" />
         </ComboBox>
-
+        <Button
+            x:Name="TestButton"
+            Width="55"
+            Height="15"
+            Margin="242,165,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="TestButton_Click"
+            Content="TestButton"
+            FontSize="10" />
         <!--  Einzahlen  -->
         <TextBox
             x:Name="EinzahlenBox"
@@ -248,6 +256,6 @@
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
             IsReadOnly="True"
-            Text="{Binding LogInUser.Kontostand}" />
+            Text="{Binding LogInUser.Kontostand, StringFormat={}{0:F2}}" />
     </Grid>
 </Window>

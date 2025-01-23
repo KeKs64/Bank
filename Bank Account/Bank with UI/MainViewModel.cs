@@ -404,5 +404,21 @@ public class MainViewModel : ObservableObject
     {
         TransactionsOc = bank.AbrufZahlungsHistorie(username, password);
     }
+    internal void VMTest_Button(string content, string username, string password)
+    {
+        var kontostandcheck = bank.Kontostand(username, password);
+        bank.SaveData();
 
+        if (content == "Euro")
+        {
+            //Dollar zu Euro (/ 1.05)
+            loginUser.Kontostand = kontostandcheck.Value / 1.05;
+        }
+        else if (content == "Dollar")
+        {
+            //Euro zu Dollar (* 1.05)
+            
+            loginUser.Kontostand = kontostandcheck.Value * 1.05;
+        }
+    }
 }
