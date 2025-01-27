@@ -404,21 +404,42 @@ public class MainViewModel : ObservableObject
     {
         TransactionsOc = bank.AbrufZahlungsHistorie(username, password);
     }
+    //--
+    private string nächsteWährung = "Dollar";
     internal void VMTest_Button(string content, string username, string password)
     {
         var kontostandcheck = bank.Kontostand(username, password);
-        bank.SaveData();
 
-        if (content == "Euro")
+        if (content == "Euro" && nächsteWährung == "Euro")
         {
             //Dollar zu Euro (/ 1.05)
             loginUser.Kontostand = kontostandcheck.Value / 1.05;
+            nächsteWährung = "Dollar";
         }
-        else if (content == "Dollar")
+        else if (content == "Dollar" && nächsteWährung == "Dollar")
         {
             //Euro zu Dollar (* 1.05)
-            
             loginUser.Kontostand = kontostandcheck.Value * 1.05;
+            nächsteWährung = "Euro";
         }
+        else
+        {
+            MessageBox.Show("Du kannst nicht nochmal in die slebe Währung wechseln", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+        }
+        bank.SaveData();
+    }
+    internal void VMClosing(string content, string username, string password)
+    {
+        var kontostandcheck = bank.Kontostand(username, password);
+
+        if (content == "Closing" && nächsteWährung == "Euro")
+        {
+            loginUser.Kontostand = kontostandcheck.Value / 1.05;
+        }
+        else
+        {
+            MessageBox.Show("fail","",MessageBoxButton.OK);
+        }
+        bank.SaveData();
     }
 }

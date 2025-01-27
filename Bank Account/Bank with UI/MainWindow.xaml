@@ -8,6 +8,7 @@
     Title="Bank"
     Width="614"
     Height="457"
+    Closing="Window_Closing"
     mc:Ignorable="d">
     <Window.DataContext>
         <local:MainViewModel x:Name="viewModel" />
@@ -23,10 +24,10 @@
 
         <!--  Anmelde/Registrierungs Block  -->
         <TextBlock
-            Width="310"
+            Width="266"
             Height="20"
-            Margin="20,12,0,0"
-            HorizontalAlignment="Left"
+            Margin="0,12,0,0"
+            HorizontalAlignment="Center"
             VerticalAlignment="Top"
             Text="Bitte geben Sie Ihr Benutzername und Passwort ein" />
         <TextBox
@@ -113,13 +114,24 @@
             RenderTransformOrigin="0.485,0.535">
             <Image RenderTransformOrigin="0.864,1.367" Source="C:\Users\louis.mu\Documents\Git\Bank\Bank Account\Bank with UI\prufen.png" />
         </Button>
+
+        <TextBlock
+            Grid.Column="1"
+            Width="80"
+            Height="74"
+            Margin="10,30,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            FontSize="13"
+            Text="Einzahlen und Abheben sind immer  in Euro(€)"
+            TextWrapping="Wrap" />
         <!--  Einzahlen  -->
         <TextBox
             x:Name="EinzahlenBox"
             Grid.Column="1"
-            Width="100"
+            Width="70"
             Height="20"
-            Margin="50,32,0,0"
+            Margin="95,32,0,0"
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
             IsEnabled="{Binding IsntLoggedIn}"
@@ -141,9 +153,9 @@
         <TextBox
             x:Name="AbhebenBox"
             Grid.Column="1"
-            Width="100"
+            Width="70"
             Height="20"
-            Margin="50,77,0,0"
+            Margin="95,77,0,0"
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
             IsEnabled="{Binding IsntLoggedIn}"

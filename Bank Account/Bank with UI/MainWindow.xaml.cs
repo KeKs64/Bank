@@ -79,5 +79,11 @@ namespace Bank_with_UI
 
             viewModel.VMTest_Button(content, Benutzername.Text, Passwort.Text);
         }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            string content = "Closing";
+            viewModel.VMClosing(content, Benutzername.Text, Passwort.Text);
+        }
     }
 }
