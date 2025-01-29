@@ -96,7 +96,6 @@
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
             IsEnabled="{Binding IsntLoggedIn}"
-            ItemsSource="{Binding Währung}"
             SelectedItem="{Binding Währung}">
             <ComboBoxItem Content="Euro" IsSelected="True" />
             <ComboBoxItem Content="Dollar" />
@@ -114,24 +113,13 @@
             RenderTransformOrigin="0.485,0.535">
             <Image RenderTransformOrigin="0.864,1.367" Source="C:\Users\louis.mu\Documents\Git\Bank\Bank Account\Bank with UI\prufen.png" />
         </Button>
-
-        <TextBlock
-            Grid.Column="1"
-            Width="80"
-            Height="74"
-            Margin="10,30,0,0"
-            HorizontalAlignment="Left"
-            VerticalAlignment="Top"
-            FontSize="13"
-            Text="Einzahlen und Abheben sind immer  in Euro(€)"
-            TextWrapping="Wrap" />
         <!--  Einzahlen  -->
         <TextBox
             x:Name="EinzahlenBox"
             Grid.Column="1"
-            Width="70"
+            Width="100"
             Height="20"
-            Margin="95,32,0,0"
+            Margin="55,32,0,0"
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
             IsEnabled="{Binding IsntLoggedIn}"
@@ -153,9 +141,9 @@
         <TextBox
             x:Name="AbhebenBox"
             Grid.Column="1"
-            Width="70"
+            Width="100"
             Height="20"
-            Margin="95,77,0,0"
+            Margin="55,77,0,0"
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
             IsEnabled="{Binding IsntLoggedIn}"
@@ -180,7 +168,7 @@
             Grid.Column="1"
             Width="100"
             Height="20"
-            Margin="165,155,0,0"
+            Margin="165,185,0,0"
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
             Click="Löschen"
@@ -194,7 +182,7 @@
             Grid.Column="1"
             Width="90"
             Height="20"
-            Margin="50,155,0,0"
+            Margin="170,155,0,0"
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
             Click="Abmelden"

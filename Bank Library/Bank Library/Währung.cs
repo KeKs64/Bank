@@ -10,9 +10,5 @@
             Euro = euro;
             Dollar = dollar;
         }
-        public void ToDollar()
-        {
-            //Kontostand * 1.05
-        }
     }
 }

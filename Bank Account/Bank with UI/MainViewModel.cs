@@ -1,9 +1,6 @@
 ﻿using Bank_Library;
 using System.Collections.ObjectModel;
-using System.IO;
-using System.Text.Json;
 using System.Windows;
-using System.Windows.Controls;
 
 namespace Bank_with_UI;
 
@@ -424,7 +421,7 @@ public class MainViewModel : ObservableObject
         }
         else
         {
-            MessageBox.Show("Du kannst nicht nochmal in die slebe Währung wechseln", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            MessageBox.Show("Du kannst nicht nochmal in die selbe Währung wechseln", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
         }
         bank.SaveData();
     }
@@ -435,10 +432,6 @@ public class MainViewModel : ObservableObject
         if (content == "Closing" && nächsteWährung == "Euro")
         {
             loginUser.Kontostand = kontostandcheck.Value / 1.05;
-        }
-        else
-        {
-            MessageBox.Show("fail","",MessageBoxButton.OK);
         }
         bank.SaveData();
     }
