@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\louis.mu\\Documents\\Git\\Bank\\Bank Account\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9AA91527-1F0B-4589-94B6-5B2A6E6C81DA}|Bank with UI\\Bank with UI.csproj|c:\\users\\louis.mu\\documents\\git\\bank\\bank account\\bank with ui\\window1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{9AA91527-1F0B-4589-94B6-5B2A6E6C81DA}|Bank with UI\\Bank with UI.csproj|solutionrelative:bank with ui\\window1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9AA91527-1F0B-4589-94B6-5B2A6E6C81DA}|Bank with UI\\Bank with UI.csproj|c:\\users\\louis.mu\\documents\\git\\bank\\bank account\\bank with ui\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9AA91527-1F0B-4589-94B6-5B2A6E6C81DA}|Bank with UI\\Bank with UI.csproj|solutionrelative:bank with ui\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AA91527-1F0B-4589-94B6-5B2A6E6C81DA}|Bank with UI\\Bank with UI.csproj|c:\\users\\louis.mu\\documents\\git\\bank\\bank account\\bank with ui\\window1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9AA91527-1F0B-4589-94B6-5B2A6E6C81DA}|Bank with UI\\Bank with UI.csproj|solutionrelative:bank with ui\\window1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9AA91527-1F0B-4589-94B6-5B2A6E6C81DA}|Bank with UI\\Bank with UI.csproj|c:\\users\\louis.mu\\documents\\git\\bank\\bank account\\bank with ui\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -82,7 +82,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\louis.mu\\Documents\\Git\\Bank\\Bank Account\\Bank with UI\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "Bank with UI\\MainWindow.xaml.cs",
@@ -171,8 +171,8 @@
       "FloatingWindowState": {
         "Id": "8fc66e6d-f2ff-4956-9e12-d15bd8837ea3",
         "Display": 0,
-        "X": 190,
-        "Y": 95,
+        "X": 189,
+        "Y": 94,
         "Width": 1464,
         "Height": 830,
         "WindowState": 2
@@ -196,7 +196,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Window1.xaml",
               "DocumentMoniker": "C:\\Users\\louis.mu\\Documents\\Git\\Bank\\Bank Account\\Bank with UI\\Window1.xaml",
               "RelativeDocumentMoniker": "Bank with UI\\Window1.xaml",
