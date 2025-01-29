@@ -25,10 +25,6 @@
       "AbsoluteMoniker": "D:0:0:{2C07E925-F7C4-4A43-808B-927CEE5FFDBC}|..\\Bank Library\\Bank Library\\Bank Library.csproj|c:\\users\\louis.mu\\documents\\git\\bank\\bank library\\bank library\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9AA91527-1F0B-4589-94B6-5B2A6E6C81DA}|Bank with UI\\Bank with UI.csproj|c:\\users\\louis.mu\\documents\\git\\bank\\bank account\\bank with ui\\window1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{9AA91527-1F0B-4589-94B6-5B2A6E6C81DA}|Bank with UI\\Bank with UI.csproj|solutionrelative:bank with ui\\window1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2C07E925-F7C4-4A43-808B-927CEE5FFDBC}|..\\Bank Library\\Bank Library\\Bank Library.csproj|c:\\users\\louis.mu\\documents\\git\\bank\\bank library\\bank library\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -46,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,77 +58,19 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ObservableObject.cs",
+              "DocumentMoniker": "C:\\Users\\louis.mu\\Documents\\Git\\Bank\\Bank Account\\Bank with UI\\ObservableObject.cs",
+              "RelativeDocumentMoniker": "Bank with UI\\ObservableObject.cs",
+              "ToolTip": "C:\\Users\\louis.mu\\Documents\\Git\\Bank\\Bank Account\\Bank with UI\\ObservableObject.cs",
+              "RelativeToolTip": "Bank with UI\\ObservableObject.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T14:11:35.52Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Window1.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\louis.mu\\Documents\\Git\\Bank\\Bank Account\\Bank with UI\\Window1.xaml.cs",
-              "RelativeDocumentMoniker": "Bank with UI\\Window1.xaml.cs",
-              "ToolTip": "C:\\Users\\louis.mu\\Documents\\Git\\Bank\\Bank Account\\Bank with UI\\Window1.xaml.cs",
-              "RelativeToolTip": "Bank with UI\\Window1.xaml.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAswB4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-14T09:25:32.053Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\louis.mu\\Documents\\Git\\Bank\\Bank Account\\Bank with UI\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Bank with UI\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\louis.mu\\Documents\\Git\\Bank\\Bank Account\\Bank with UI\\MainWindow.xaml.cs",
-              "RelativeToolTip": "Bank with UI\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T10:51:53.641Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Transaction.cs",
-              "DocumentMoniker": "C:\\Users\\louis.mu\\Documents\\Git\\Bank\\Bank Library\\Bank Library\\Transaction.cs",
-              "RelativeDocumentMoniker": "..\\Bank Library\\Bank Library\\Transaction.cs",
-              "ToolTip": "C:\\Users\\louis.mu\\Documents\\Git\\Bank\\Bank Library\\Bank Library\\Transaction.cs",
-              "RelativeToolTip": "..\\Bank Library\\Bank Library\\Transaction.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T13:16:45.005Z"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "8fc66e6d-f2ff-4956-9e12-d15bd8837ea3",
-        "Display": 0,
-        "X": 158,
-        "Y": 126,
-        "Width": 1464,
-        "Height": 823,
-        "WindowState": 2
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 3,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "W\u00E4hrung.cs",
-              "DocumentMoniker": "C:\\Users\\louis.mu\\Documents\\Git\\Bank\\Bank Library\\Bank Library\\W\u00E4hrung.cs",
-              "RelativeDocumentMoniker": "..\\Bank Library\\Bank Library\\W\u00E4hrung.cs",
-              "ToolTip": "C:\\Users\\louis.mu\\Documents\\Git\\Bank\\Bank Library\\Bank Library\\W\u00E4hrung.cs",
-              "RelativeToolTip": "..\\Bank Library\\Bank Library\\W\u00E4hrung.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-22T12:16:45.582Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "Account.cs",
               "DocumentMoniker": "C:\\Users\\louis.mu\\Documents\\Git\\Bank\\Bank Library\\Bank Library\\Account.cs",
               "RelativeDocumentMoniker": "..\\Bank Library\\Bank Library\\Account.cs",
@@ -144,28 +82,40 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Bank.cs",
-              "DocumentMoniker": "C:\\Users\\louis.mu\\Documents\\Git\\Bank\\Bank Library\\Bank Library\\Bank.cs",
-              "RelativeDocumentMoniker": "..\\Bank Library\\Bank Library\\Bank.cs",
-              "ToolTip": "C:\\Users\\louis.mu\\Documents\\Git\\Bank\\Bank Library\\Bank Library\\Bank.cs",
-              "RelativeToolTip": "..\\Bank Library\\Bank Library\\Bank.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAmAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "Transaction.cs",
+              "DocumentMoniker": "C:\\Users\\louis.mu\\Documents\\Git\\Bank\\Bank Library\\Bank Library\\Transaction.cs",
+              "RelativeDocumentMoniker": "..\\Bank Library\\Bank Library\\Transaction.cs",
+              "ToolTip": "C:\\Users\\louis.mu\\Documents\\Git\\Bank\\Bank Library\\Bank Library\\Transaction.cs",
+              "RelativeToolTip": "..\\Bank Library\\Bank Library\\Transaction.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-22T08:29:31.972Z"
+              "WhenOpened": "2025-01-21T13:16:45.005Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MainViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\louis.mu\\Documents\\Git\\Bank\\Bank Account\\Bank with UI\\MainViewModel.cs",
-              "RelativeDocumentMoniker": "Bank with UI\\MainViewModel.cs",
-              "ToolTip": "C:\\Users\\louis.mu\\Documents\\Git\\Bank\\Bank Account\\Bank with UI\\MainViewModel.cs",
-              "RelativeToolTip": "Bank with UI\\MainViewModel.cs",
-              "ViewState": "AgIAABUBAAAAAAAAAAAAAB4BAAAFAAAAAAAAAA==",
+              "Title": "Window1.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\louis.mu\\Documents\\Git\\Bank\\Bank Account\\Bank with UI\\Window1.xaml.cs",
+              "RelativeDocumentMoniker": "Bank with UI\\Window1.xaml.cs",
+              "ToolTip": "C:\\Users\\louis.mu\\Documents\\Git\\Bank\\Bank Account\\Bank with UI\\Window1.xaml.cs",
+              "RelativeToolTip": "Bank with UI\\Window1.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-21T13:02:42.057Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\louis.mu\\Documents\\Git\\Bank\\Bank Account\\Bank with UI\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Bank with UI\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\louis.mu\\Documents\\Git\\Bank\\Bank Account\\Bank with UI\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Bank with UI\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-10T10:51:53.641Z"
             }
           ]
         }
@@ -190,7 +140,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 6,
               "Title": "File.json",
               "DocumentMoniker": "C:\\Users\\louis.mu\\Documents\\Git\\Bank\\Bank Account\\Bank with UI\\bin\\Debug\\net9.0-windows\\File.json",
               "RelativeDocumentMoniker": "Bank with UI\\bin\\Debug\\net9.0-windows\\File.json",
@@ -220,7 +170,52 @@
               "ToolTip": "C:\\Users\\louis.mu\\Documents\\Git\\Bank\\Bank Account\\Bank with UI\\MainWindow.xaml",
               "RelativeToolTip": "Bank with UI\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-21T13:03:09.526Z",
+              "WhenOpened": "2025-01-21T13:03:09.526Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "8fc66e6d-f2ff-4956-9e12-d15bd8837ea3",
+        "Display": 0,
+        "X": -62,
+        "Y": 142,
+        "Width": 1465,
+        "Height": 830,
+        "WindowState": 2
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Bank.cs",
+              "DocumentMoniker": "C:\\Users\\louis.mu\\Documents\\Git\\Bank\\Bank Library\\Bank Library\\Bank.cs",
+              "RelativeDocumentMoniker": "..\\Bank Library\\Bank Library\\Bank.cs",
+              "ToolTip": "C:\\Users\\louis.mu\\Documents\\Git\\Bank\\Bank Library\\Bank Library\\Bank.cs",
+              "RelativeToolTip": "..\\Bank Library\\Bank Library\\Bank.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAhwFkAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-22T08:29:31.972Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\louis.mu\\Documents\\Git\\Bank\\Bank Account\\Bank with UI\\MainViewModel.cs",
+              "RelativeDocumentMoniker": "Bank with UI\\MainViewModel.cs",
+              "ToolTip": "C:\\Users\\louis.mu\\Documents\\Git\\Bank\\Bank Account\\Bank with UI\\MainViewModel.cs",
+              "RelativeToolTip": "Bank with UI\\MainViewModel.cs",
+              "ViewState": "AgIAAFEBAAAAAAAAAAAYwHABAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T13:02:42.057Z",
               "EditorCaption": ""
             }
           ]
